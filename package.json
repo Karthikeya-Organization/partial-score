@@ -1,12 +1,16 @@
 {
-    "name": "autograding-test",
+    "name": "classroom-assignment",
     "version": "1.0.0",
+    "description": "GitHub Classroom Assignment",
+    "main": "index.js",
     "scripts": {
-      "test": "jest",
-      "score": "npx jest --json --outputFile=results.json && node calculate-score.js"
+      "test": "jest --json --outputFile=.results.json && node process-results.js"
     },
-    "devDependencies": {
-      "jest": "^29.0.0"
+    "dependencies": {
+      "jest": "^29.5.0"
+    },
+    "jest": {
+      "testEnvironment": "node",
+      "testPathIgnorePatterns": ["/node_modules/"]
     }
   }
-  
