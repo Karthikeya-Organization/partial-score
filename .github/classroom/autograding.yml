@@ -1,0 +1,14 @@
+autograding:
+  - name: Run Tests
+    setup: npm install
+    run: npm test
+    points: 4
+    timeout: 10
+    required_files:
+      - sum.js
+      - sum.test.js
+      - package.json
+    scoring:
+      mode: tests-passed
+      num_tests: 10
+      points_per_test: 0.4
